@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="light dark" />
+    <title>Personal Portfolio - Tata Ghany Alfira</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="scroll-progress" id="scrollProgress"></div>
+    <div class="cursor-glow" aria-hidden="true"></div>
+    <div class="bg-shape shape-1" aria-hidden="true"></div>
+    <div class="bg-shape shape-2" aria-hidden="true"></div>
+    <div class="bg-shape shape-3" aria-hidden="true"></div>
+
+    <header class="navbar" id="top">
+      <a class="brand" href="#home">PKL<span>Portfolio</span></a>
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme" aria-pressed="false">Light</button>
+        <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+      </div>
+      <nav class="nav-links" id="navLinks">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#timeline" class="nav-link">Perjalanan PKL</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#gallery" class="nav-link">Gallery</a>
+        <a href="#certificates" class="nav-link">Certificates</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Hero -->
+      <section class="hero section" id="home">
+        <div class="hero-copy reveal">
+          <div class="eyebrow">Siswi SMK Jurusan Rekayasa Perangkat Lunak (RPL)</div>
+          <h1>
+            <span class="grad-text">Halo, Saya Tata Ghany Alfira</span>
+            <span class="hero-sub">Personal Portfolio</span>
+          </h1>
+          <p class="hero-desc">Saya adalah siswi SMK jurusan Rekayasa Perangkat Lunak yang sedang menjalani Praktik Kerja Lapangan (PKL) di PT Perwiramedia. Saya memiliki minat pada Web Development, UI/UX, dan senang mempelajari teknologi baru.</p>
+          <div class="typing-wrap"><span class="typing-label">Role:</span><span id="typingText" class="typing-text"></span></div>
+          <div class="hero-actions">
+            <a class="btn btn-primary ripple" href="#contact">Download CV</a>
+            <a class="btn btn-secondary ripple" href="#projects">Lihat Project</a>
+          </div>
+          <div class="hero-stats">
+            <div class="stat-card"><strong data-count="3">0</strong><span>Project</span></div>
+            <div class="stat-card"><strong data-count="4">0</strong><span>Week</span></div>
+            <div class="stat-card"><strong data-count="10">0</strong><span>Skills</span></div>
+          </div>
+        </div>
+        <div class="hero-visual reveal">
+          <div class="profile-card floating">
+            <div class="profile-photo">
+              <div class="photo-ring"></div>
+              <img class="profile-image" src="assets/images/profile/profile.jpg" alt="Foto profil Tata Ghany Alfira" />
+            </div>
+            <div class="profile-meta"><h2>Tata Ghany Alfira</h2><p>Siswi SMK RPL</p></div>
+            <div class="profile-pill">PKL @ PT Perwiramedia</div>
+          </div>
+          <div class="floating-card card-a"><span>Active Projects</span><strong>3</strong></div>
+          <div class="floating-card card-b"><span>Current Focus</span><strong>Web Development</strong></div>
+        </div>
+      </section>
+
+      <!-- About -->
+      <section class="section reveal" id="about">
+        <div class="section-head"><span class="section-kicker">About</span><h2>Tentang Saya</h2></div>
+        <div class="about-grid">
+          <article class="panel about-panel">
+            <p class="lead">Halo! Saya Tata Ghany Alfira, siswi SMK jurusan Rekayasa Perangkat Lunak (RPL) yang sedang menjalani Praktik Kerja Lapangan (PKL) di PT Perwiramedia.</p>
+            <p class="lead">Selama PKL saya mempelajari proses pengembangan website mulai dari menyusun Product Requirement Document (PRD), menggunakan Visual Studio Code dan Qoder AI, hingga melakukan deployment website menggunakan GitHub dan Netlify.</p>
+            <p class="lead">Saya memiliki minat pada Web Development, UI/UX sederhana, dan terus belajar teknologi baru untuk meningkatkan kemampuan saya di bidang pengembangan website.</p>
+            <div class="info-grid">
+              <div><span>Nama</span><strong>Tata Ghany Alfira</strong></div>
+              <div><span>Status</span><strong>Siswi SMK N 1 rembang purbalingga</strong></div>
+              <div><span>Tempat PKL</span><strong>PT Perwiramedia</strong></div>
+              <div><span>Domisili</span><strong>purbalingga, jawa tengah</strong></div>
+              <div><span>Email</span><strong>firaa7847@gmail.com</strong></div>
+            </div>
+          </article>
+          <article class="panel about-card">
+            <h3>Profil Singkat</h3>
+            <ul class="checklist">
+              <li>Bersemangat belajar dan terbuka terhadap pengalaman baru.</li>
+              <li>Menyukai pengembangan website dan UI yang sederhana namun rapi.</li>
+              <li>Berkomitmen untuk terus meningkatkan kemampuan web development.</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <!-- Skills -->
+      <section class="section reveal" id="skills">
+        <div class="section-head"><span class="section-kicker">Skills</span><h2>Skill Utama</h2></div>
+        <div class="skills-grid">
+          <article class="skill-card"><img src="assets/images/icons/html5.svg" alt="HTML5" /><h3>HTML5</h3><p>Struktur halaman web yang rapi.</p><div class="bar"><i style="width:92%"></i></div></article>
+          <article class="skill-card"><img src="assets/images/icons/css3.svg" alt="CSS3" /><h3>CSS3</h3><p>Layout responsif dan animasi halus.</p><div class="bar"><i style="width:90%"></i></div></article>
+          <article class="skill-card"><img src="assets/images/icons/javascript.svg" alt="JavaScript" /><h3>JavaScript</h3><p>Interaksi dan logika UI modern.</p><div class="bar"><i style="width:84%"></i></div></article>
+          <article class="skill-card"><img src="assets/images/icons/git.svg" alt="Git" /><h3>Git</h3><p>Version control untuk project.</p><div class="bar"><i style="width:88%"></i></div></article>
+          <article class="skill-card"><img src="assets/images/icons/github.svg" alt="GitHub" /><h3>GitHub</h3><p>Repositori dan kolaborasi code.</p><div class="bar"><i style="width:86%"></i></div></article>
+          <article class="skill-card"><img src="assets/images/icons/vscode.svg" alt="Visual Studio Code" /><h3>Visual Studio Code</h3><p>Editor utama untuk coding.</p><div class="bar"><i style="width:94%"></i></div></article>
+          <article class="skill-card"><img src="assets/images/icons/qoder-ai.svg" alt="Qoder AI" /><h3>Qoder AI</h3><p>Tools bantuan coding dan ide.</p><div class="bar"><i style="width:80%"></i></div></article>
+          <article class="skill-card"><img src="assets/images/icons/canva.svg" alt="Canva" /><h3>Canva</h3><p>Membuat visual dan materi sederhana.</p><div class="bar"><i style="width:82%"></i></div></article>
+          <article class="skill-card"><img src="assets/images/icons/figma.svg" alt="Figma" /><h3>Figma</h3><p>Wireframe dan desain antarmuka.</p><div class="bar"><i style="width:78%"></i></div></article>
+          <article class="skill-card"><img src="assets/images/icons/netlify.svg" alt="Netlify" /><h3>Netlify</h3><p>Deploy website secara cepat.</p><div class="bar"><i style="width:76%"></i></div></article>
+        </div>
+      </section>
+
+      <!-- Timeline -->
+      <section class="section reveal" id="timeline">
+        <div class="section-head"><span class="section-kicker">Timeline</span><h2>Perjalanan PKL di PT Perwiramedia</h2></div>
+        <div class="timeline timeline-vertical">
+          <article class="timeline-card reveal">
+            <div class="timeline-icon">01</div>
+            <div>
+              <span class="timeline-date">Minggu 1 | 15 Juni – 18 Juni 2026</span>
+              <h3>Persiapan Lingkungan Kerja</h3>
+              <ul>
+                <li>Adaptasi dengan lingkungan kerja.</li>
+                <li>Instalasi Ubuntu menggunakan Rufus.</li>
+                <li>Instal ulang Linux.</li>
+                <li>Menyelesaikan proses instalasi sistem.</li>
+              </ul>
+            </div>
+          </article>
+          <article class="timeline-card reveal">
+            <div class="timeline-icon">02</div>
+            <div>
+              <span class="timeline-date">Minggu 2 | 22 Juni – 30 Juni 2026</span>
+              <h3>Belajar Dasar Web Development</h3>
+              <ul>
+                <li>Presentasi hasil pembelajaran.</li>
+                <li>Belajar mandiri.</li>
+                <li>Memperdalam materi web development.</li>
+                <li>Instalasi dan konfigurasi LAMPP.</li>
+              </ul>
+            </div>
+          </article>
+          <article class="timeline-card reveal">
+            <div class="timeline-icon">03</div>
+            <div>
+              <span class="timeline-date">Minggu 3 | 1 Juli – 4 Juli 2026</span>
+              <h3>Memulai Pembuatan Website</h3>
+              <ul>
+                <li>Belajar Vibe Coding.</li>
+                <li>Menginstal Visual Studio Code.</li>
+                <li>Menginstal Qoder AI.</li>
+                <li>Menyusun Product Requirement Document (PRD).</li>
+                <li>Membuat website portfolio.</li>
+                <li>Deploy website ke Netlify.</li>
+                <li>Upload project ke GitHub.</li>
+              </ul>
+            </div>
+          </article>
+          <article class="timeline-card reveal">
+            <div class="timeline-icon">04</div>
+            <div>
+              <span class="timeline-date">Minggu 4 | 7 Juli – 10 Juli 2026</span>
+              <h3>Penyelesaian Website</h3>
+              <ul>
+                <li>Melanjutkan pengembangan website.</li>
+                <li>Memperbaiki tampilan website.</li>
+                <li>Menyempurnakan fitur.</li>
+                <li>Finalisasi website portfolio.</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- Projects -->
+      <section class="section reveal" id="projects">
+        <div class="section-head"><span class="section-kicker">Projects</span><h2>Project Selama PKL</h2></div>
+        <div class="card-grid" id="projectGrid">
+          <article class="project-card" data-tags="website pkl html css js">
+            <img class="thumb" src="assets/images/projects/project-1.svg" alt="Personal Portfolio Website" />
+            <h3>Personal Portfolio Website</h3>
+            <p>Website yang saya buat selama Praktik Kerja Lapangan (PKL) di PT Perwiramedia. Website fashion bertema Korean style yang menampilkan produk seperti sepatu dan tas dengan desain modern, minimalis, dan responsif. Project ini dibuat sebagai penerapan kemampuan dalam desain UI dan pengembangan website.</p>
+            <div class="tag-row"><span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>Qoder AI</span><span>GitHub</span><span>Netlify</span></div>
+            <div class="status-pill done">Selesai</div>
+            <div class="card-actions">
+              <a class="mini-btn ripple icon-btn" href="https://warm-chimera-30b086.netlify.app/" target="_blank" rel="noreferrer">
+                <img src="assets/images/icons/external-link.svg" alt="" aria-hidden="true" />
+                <span>Demo Website</span>
+              </a>
+              <a class="mini-btn ghost ripple icon-btn" href="#" target="_blank" rel="noreferrer">
+                <img src="assets/images/icons/github.svg" alt="" aria-hidden="true" />
+                <span>GitHub Repository</span>
+              </a>
+            </div>
+          </article>
+          <article class="project-card" data-tags="pkl prd documentation">
+            <img class="thumb" src="assets/images/projects/project-2.svg" alt="Product Requirement Document" />
+            <h3>..</h3>
+            <p>.</p>
+            <div class="tag-row"><span>PRD</span><span>Planning</span></div>
+            <div class="status-pill done">Selesai</div>
+            <div class="card-actions"><a class="mini-btn ripple" href="#" target="_blank" rel="noreferrer">Demo</a><a class="mini-btn ghost ripple" href="#" target="_blank" rel="noreferrer">GitHub</a></div>
+          </article>
+          <article class="project-card" data-tags="pkl deployment github netlify">
+            <img class="thumb" src="assets/images/projects/project-3.svg" alt="Deployment Website" />
+            <h3>..</h3>
+            <p>.</p>
+            <div class="tag-row"><span>GitHub</span><span>Netlify</span></div>
+            <div class="status-pill done">Selesai</div>
+            <div class="card-actions"><a class="mini-btn ripple" href="#" target="_blank" rel="noreferrer">Demo</a><a class="mini-btn ghost ripple" href="#" target="_blank" rel="noreferrer">GitHub</a></div>
+          </article>
+        </div>
+      </section>
+
+      <!-- Gallery -->
+      <section class="section reveal" id="gallery">
+        <div class="section-head"><span class="section-kicker">Gallery</span><h2>Dokumentasi PKL</h2></div>
+        <div class="gallery-grid" id="galleryGrid">
+          <button class="gallery-item lightbox-trigger" data-full="assets/images/gallery/gallery-1.svg"><img src="assets/images/gallery/gallery-1.svg" alt="Belajar Ubuntu" /><span>Belajar Ubuntu</span></button>
+          <button class="gallery-item lightbox-trigger" data-full="assets/images/gallery/gallery-2.svg"><img src="assets/images/gallery/gallery-2.svg" alt="Instalasi LAMPP" /><span>Instalasi LAMPP</span></button>
+          <button class="gallery-item lightbox-trigger" data-full="assets/images/gallery/gallery-3.svg"><img src="assets/images/gallery/gallery-3.svg" alt="Belajar HTML CSS" /><span>Belajar HTML CSS</span></button>
+          <button class="gallery-item lightbox-trigger" data-full="assets/images/gallery/gallery-4.svg"><img src="assets/images/gallery/gallery-4.svg" alt="Belajar JavaScript" /><span>Belajar JavaScript</span></button>
+        </div>
+      </section>
+
+    
+
+      <!-- Contact -->
+      <section class="section reveal" id="contact">
+        <div class="section-head"><span class="section-kicker">Contact</span><h2>Hubungi Saya</h2></div>
+        <div class="contact-grid">
+          <div class="panel contact-card">
+            <div class="social-list">
+              <a href="#" class="social-chip"><img src="assets/images/icons/whatsapp.svg" alt="WhatsApp" />WhatsApp</a>
+              <a href="mailto:firaa7847@gmail.com" class="social-chip">
+  <img src="assets/images/icons/email.svg" alt="Email" />
+  Email
+</a>
+              <a href="https://www.instagram.com/ttalfira/" class="social-chip" target="_blank">
+  <img src="assets/images/icons/instagram.svg" alt="Instagram" />
+  Instagram
+</a>
+              <a href="https://github.com/firaa7847-marker" class="social-chip" target="_blank">
+  <img src="assets/images/icons/github.svg" alt="GitHub" />
+  GitHub
+</a>
+            </div>
+            <div class="contact-item"><span>Nama</span><strong>Tata Ghany Alfira</strong></div>
+            <div class="contact-item"><span>Status</span><strong>Siswi SMK RPL</strong></div>
+            <div class="contact-item"><span>Tempat PKL</span><strong>PT Perwiramedia</strong></div>
+            <a class="btn btn-primary whatsapp-btn ripple" href="https://wa.me/6281234567890" target="_blank" rel="noreferrer">Chat WhatsApp</a>
+          </div>
+          <form class="panel contact-form" id="contactForm">
+            <label>Nama<input type="text" name="name" placeholder="Nama Anda" required /></label>
+            <label>Email<input type="email" name="email" placeholder="email@domain.com" required /></label>
+            <label>Pesan<textarea name="message" rows="5" placeholder="Tulis pesan..." required></textarea></label>
+            <button class="btn btn-primary ripple" type="submit">Kirim Pesan</button>
+            <div class="toast" id="toast" role="status" aria-live="polite"></div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div><a class="brand" href="#home">PKL<span>Portfolio</span></a><p>Personal Portfolio - Tata Ghany Alfira</p></div>
+      <div class="footer-links"><a href="#about">About</a><a href="#projects">Projects</a><a href="#contact">Contact</a></div>
+      <a class="back-to-top" href="#top">Back to Top</a>
+    </footer>
+
+    <button class="back-top" id="backTop" aria-label="Back to top">↑</button>
+    <div class="lightbox" id="lightbox" aria-hidden="true"><button class="lightbox-close" id="lightboxClose" aria-label="Close preview">×</button><img id="lightboxImage" alt="Preview" /></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
